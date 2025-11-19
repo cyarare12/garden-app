@@ -1,12 +1,17 @@
 # Garden Advice App
 # This app provides gardening tips based on the month and season.
 
-# TODO: Create a function to get the current month
+import datetime
+
 # TODO: Add documentation to all functions
 # TODO: Replace hardcoded season names with a dictionary
 # TODO: Add error handling for invalid months
 
-month = 5  # Example: May
+def get_current_month():
+    """Get the current month as an integer."""
+    return datetime.datetime.now().month
+
+month = get_current_month()
 
 if month in [12, 1, 2]:
     season = "Winter"
